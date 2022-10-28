@@ -1,0 +1,30 @@
+import React, { useState } from 'react'
+import axios from 'axios'
+import './SearchBar.css'
+
+function Search() {
+    const [query, setQuery] = useState('')
+
+    const handleSubmit = (e) => {
+        setQuery(e.target[0].value)
+    }
+
+    const sendQuery = async () => {
+        await axios.post(`http://localhost:8000/flickr`, {
+            query: query
+        })
+    }
+    sendQuery()
+
+    return (
+        <section className="searchBar">
+            <form onSubmit={(e) => handleSubmit(e)}>
+                <h1>Flickr Image Finder</h1>
+                    <input type="text" placeholder="Look for the best images"/>
+                    <button type="submit">Search images</button>
+            </form>
+        </section>
+    )
+}
+
+export default Search
