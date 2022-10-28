@@ -3,6 +3,8 @@
 
 A simple web application that reads data from Flickr's public feeds and displays an image grid on the page to the user. 
 
+<img src="imageFeed.gif" alt="" width="100%">
+
 ## Build with 🏗️
 - [x] NodeJS
 - [x] ExpressJS
