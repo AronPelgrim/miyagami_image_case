@@ -24,5 +24,5 @@ $ npm start
 (for both the backend and the frontend folder)
 ```
 
-# License :key:
+## License :key:
 [MIT](https://github.com/AronPelgrim/miyagami_image_case/blob/master/LICENSE)
