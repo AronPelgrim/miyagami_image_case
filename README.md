@@ -11,15 +11,20 @@ A simple web application that reads data from Flickr's public feeds and displays
 ## Installation guide ⬆️
 ```
 $ git clone https://github.com/AronPelgrim//miyagami_image_case.git
-
+```
+```
 $ cd frontend
-
+```
+```
 $ npm install
-
+```
+```
 $ cd ../backend
-
+```
+```
 $ npm install
-
+```
+```
 $ npm start 
 (for both the backend and the frontend folder)
 ```
