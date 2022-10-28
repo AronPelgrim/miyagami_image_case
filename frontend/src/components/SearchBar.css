@@ -30,7 +30,7 @@ input {
 	font-family: 'Montserrat', sans-serif;
 }
 input[type="search"]::-webkit-search-cancel-button {
-	 display: none; 
+	display: none; 
 }
 button {
 	width: 10em;
