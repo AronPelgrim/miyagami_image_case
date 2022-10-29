@@ -11,8 +11,10 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 
+// The default search term
 let searchInput = 'birds'
 
+// The index page that get images with default search term
 app.get('/flickr', async (req, res) => {
     const response = await flickr.photos
         .search({
@@ -21,6 +23,7 @@ app.get('/flickr', async (req, res) => {
     res.send(response.body) 
 }) 
 
+// Post that gets images from the new search term
 app.post("/flickr", async (req, res) => {
     if (req.body.query) {
         searchInput = req.body.query 
